@@ -1,0 +1,28 @@
+.about {
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        font-family: Montserrat;
+        margin-top: 50px;
+    }
+
+    &-left-column {
+        width: 690px;
+    }
+
+    &-title {
+        font-size: 32px;
+        font-weight: 700;
+        padding: 30px 0 15px 0;
+    }
+
+    &-descr {
+        font-size: 30px;
+    }
+
+    &-photo {
+        max-width: 420px;
+        height: auto;
+    }
+}

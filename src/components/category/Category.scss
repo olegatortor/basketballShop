@@ -1,0 +1,40 @@
+.category {
+    background-color: #06010D;
+    font-family: Montserrat;
+    margin-top: 50px;
+
+    &-wrapper {
+        height: 580px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-item {
+        width: 280px;
+        height: 400px;
+        position: relative;
+        cursor: pointer;
+        &-img {
+            opacity: .5;
+            transition: all .5s;
+        }
+        &-name {
+            position: absolute;
+            color: #fff;
+            bottom: 30px;
+            font-size: 32px;
+            text-align: center;
+            font-weight: 700;
+            transition: all .5s;
+        }
+        &:hover {
+            .category-item-img {
+                opacity: .8;
+            }
+            .category-item-name {
+                color: #FBBB4D
+            };
+        }
+    }
+}

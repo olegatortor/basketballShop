@@ -1,0 +1,28 @@
+.promo {
+    background: url('./../../../public/img/promo_bg.jpg'); 
+    height: 550px;
+    position: relative;
+
+    &-text {
+        position: absolute;
+        bottom: -100px;
+        left: 100px;
+        padding: 15px;
+        color: #fff;
+        width: 690px;
+        height: auto;
+        background: rgba(0, 0, 0, 0.60);
+    }
+
+    &-title {
+        font-family: Stalinist One;
+        font-size: 48px;
+        padding-bottom: 20px;
+    }
+
+    &-descr {
+        width: 460px;
+        font-family: Montserrat;
+        font-size: 24px;
+    }
+}

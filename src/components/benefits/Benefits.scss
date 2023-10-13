@@ -1,0 +1,33 @@
+.benefits {
+    font-family: Montserrat;
+
+    .title {
+        margin-top: 50px;
+        text-align: right;
+    }
+
+    &-list {
+        margin-top: 40px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+    } 
+
+    &-item {
+        display: flex;
+        align-items: center;
+        width: 550px;
+        &-img {
+            width: 80px;
+            height: 80px;
+            margin-right: 40px;
+        }
+        &-text {
+            text-align: left;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+    } 
+}
