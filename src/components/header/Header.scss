@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #06010D;
+  color: #fff;
+  height: 70px;
+  padding: 0px 20px;
+  &-logo {
+    text-decoration: none;
+    color: #fff;
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo {
+  font-family: 'Bungee Hairline';
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.navigation{
+  
+  &-wrap {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+  }
+
+  &-item {
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #FBBB4D;
+    }
+  }
+  
+  &-active {
+    color: #A9A9A9;
+  }
+  
+}
+
+.cart {
+  margin-left: 90px;
+  width: 45px;
+  height: 45px;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
