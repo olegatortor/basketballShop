@@ -5,6 +5,9 @@ import Promo from './components/promo/Promo';
 import About from './components/about/About';
 import CategoryBlock from './components/category/CategoryBlock';
 import Benefits from './components/benefits/Benefits';
+import Blog from './components/blog/Blog';
+import NewsBlock from './components/newsBlock/NewsBlock';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
       <About />
       <CategoryBlock />
       <Benefits />
+      <Blog />
+      <NewsBlock />
+      <Footer />
       <Routes>
         {/* <Route path="/" element={<Home />} /> Головна сторінка */}
 

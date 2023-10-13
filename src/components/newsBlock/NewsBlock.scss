@@ -1,0 +1,38 @@
+.news {
+    margin-top: 50px;
+    background: #eeeeee;
+    font-family: Montserrat;
+    padding: 35px 0;
+
+    .title {
+        text-align: center;
+    }
+
+    &-descr {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 24px;
+        width: 700px;
+        margin: 0 auto; 
+    }
+
+    &-form {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-input {
+        font-family: Montserrat;
+        width: 490px;
+        border: none;
+        color: #ADADAD;
+        font-size: 24px;
+        padding: 18px;
+    }
+
+    &-input, .btn {
+        height: 65px;
+    }
+}

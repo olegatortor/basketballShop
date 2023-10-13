@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 200px 34px 34px;
+    background-color: #06010D;
+    text-align: center;
+
+    
+  
+    &-column {
+        margin-right: 20px;
+    }
+
+    &-name {
+        padding-bottom: 15px;
+        color: #c4c4c4;
+    }
+
+    &-link {
+        font-family: 'Monteserrat', sans-serif;
+        text-decoration: none;
+        color: #c4c4c4;
+        font-size: 16px;
+        font-weight: 400;
+        transition: all .5s;
+        &:hover {
+            color: #FBBB4D;
+        }
+    }
+    
+    & ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    & ul, & li {
+        padding-bottom: 7px;
+    }
+}
+  
