@@ -40,7 +40,14 @@ img {
   font-family: Montserrat;
   font-size: 24px;
   text-transform: uppercase;
+  text-decoration: none;
   border: none;
+}
+
+.btn-a {
+    display: block;
+    padding: 18px 0;
+    text-align: center;
 }
 
 .logo {
@@ -51,4 +58,8 @@ img {
     text-decoration: none;
     color: #fff;
   }
+}
+
+.red {
+  background-color: red;
 }

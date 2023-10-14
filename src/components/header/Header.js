@@ -1,9 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.scss'; 
 
 
 function Header() {
+  
+  const navLinks = [
+    { path: '/', text: 'ГОЛОВНА' },
+    { path: '/about', text: 'ПРО НАС' },
+    { path: '/products', text: 'ТОВАРИ' },
+    { path: '/contact', text: 'КОНТАКТИ' }
+  ];
+
+  const location = useLocation();
+
+  const isActiveLink = (path) => {
+    return location.pathname === path;
+  };
+
+
+
   return (
     <header className="header">
       <div className="logo">
@@ -13,18 +29,16 @@ function Header() {
         
         <nav className="navigation">
           <ul className="navigation-wrap">
-            <li >
-              <Link to="/" className='navigation-item navigation-active'>ГОЛОВНА</Link>
-            </li>
-            <li>
-              <Link to="/about" className='navigation-item'>ПРО НАС</Link>
-            </li>
-            <li>
-              <Link to="/products" className='navigation-item'>ТОВАРИ</Link>
-            </li>
-            <li>
-              <Link to="/contact" className='navigation-item'>КОНТАКТИ</Link>
-            </li>
+            {navLinks.map((link, index) => (
+              <li >
+                <Link 
+                key={index} 
+                to={link.path} 
+                className={`navigation-item ${isActiveLink(link.path) ? 'active' : ''}`}
+                >{link.text}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
         <div className="cart">
