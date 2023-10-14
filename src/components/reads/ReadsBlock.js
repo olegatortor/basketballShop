@@ -25,6 +25,7 @@ function ReadsBlock() {
             <div className="reads-block">
                 {readsData.map((article) => (
                     <Reads
+                    key={article.id}
                     title={article.title}
                     description={article.description}
                     image={article.image}

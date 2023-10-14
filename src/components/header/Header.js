@@ -30,12 +30,12 @@ function Header() {
         <nav className="navigation">
           <ul className="navigation-wrap">
             {navLinks.map((link, index) => (
-              <li >
+              <li  key={index} >
                 <Link 
-                key={index} 
                 to={link.path} 
                 className={`navigation-item ${isActiveLink(link.path) ? 'active' : ''}`}
-                >{link.text}
+                >
+                  {link.text}
                 </Link>
               </li>
             ))}

@@ -22,7 +22,7 @@ function Blog() {
         <h2 className='title'>Блог</h2>
           <div className="blog-wrapper">
             {blogs.map((blog, index) => (
-              <BlogArticle {...blog} />
+              <BlogArticle key={index} {...blog} />
             ))}
           </div>
       </div>

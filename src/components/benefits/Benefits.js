@@ -27,10 +27,10 @@ function Benefits() {
             <h2 className='title'>Чому ми?</h2>
             <ul className="benefits-list">
                 {benefitsData.map((benefit, index) => (
-                <li key={index} className="benefits-item">
-                    <img src={benefit.icon} alt={`Icon ${index}`} className="benefits-item-img" />
-                    <p className="benefits-item-text">{benefit.text}</p>
-                </li>
+                  <li key={index} className="benefits-item">
+                      <img src={benefit.icon} alt={`Icon ${index}`} className="benefits-item-img" />
+                      <p className="benefits-item-text">{benefit.text}</p>
+                  </li>
                 ))}
             </ul>
         </div>

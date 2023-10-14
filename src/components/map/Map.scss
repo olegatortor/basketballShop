@@ -1,0 +1,44 @@
+.map {
+    background-color: #F0F0F0;
+    padding: 40px;
+    font-family: Montserrat;
+
+    &-wrapper {
+        display: flex;
+    }
+
+    &-img {
+        width: 700px;
+        height: 400px;
+        border: none;
+        margin-right: 130px;
+    }
+
+    &-address {
+        display: grid;
+        grid-template-columns: 360px;
+        &-item {
+            width: 360px;
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 0.5px solid rgba(0, 0, 0, 0.36);
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        &-link {
+            text-decoration: none;
+            color: #000;
+            font-size: 24px;
+            transition: all .5s;
+            &:hover {
+                color: #FBBB4D;
+            }
+        }
+        &-title {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #FBBB4D;
+        }
+    }
+}
