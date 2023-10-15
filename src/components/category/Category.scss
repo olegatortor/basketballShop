@@ -27,7 +27,16 @@
             font-weight: 700;
             transition: all .5s;
         }
-        &:hover {
+        &-active {
+        
+            .category-item-img {
+                opacity: .8;
+            }
+            .category-item-name {
+                color: #FBBB4D
+            };
+        }
+        &:hover{
             .category-item-img {
                 opacity: .8;
             }
