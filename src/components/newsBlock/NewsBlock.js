@@ -10,7 +10,7 @@ function NewsBlock() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(`Ваша пошта: ${email}`);
+        // console.log(`Ваша пошта: ${email}`);
         // Ваш код для обробки підписки тут
     };
 

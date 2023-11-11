@@ -8,7 +8,7 @@ function Header() {
   const navLinks = [
     { path: '/', text: 'ГОЛОВНА' },
     { path: '/about', text: 'ПРО НАС' },
-    { path: '/products', text: 'ТОВАРИ' },
+    { path: '/products/accessories/page/1', text: 'ТОВАРИ' },
     { path: '/contact', text: 'КОНТАКТИ' }
   ];
 

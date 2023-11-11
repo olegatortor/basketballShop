@@ -5,6 +5,8 @@ import '../components/reads/Reads.scss'
 import { useParams } from 'react-router-dom';
 import { readsData } from '../components/reads/ReadsBlock';
 import Footer from './../components/footer/Footer';
+import ScrollToTop from './scrollToTop';
+
 
 function ReadsPage() {
   const { articleId } = useParams();
@@ -12,6 +14,7 @@ function ReadsPage() {
 
   return (
     <>
+      <ScrollToTop />
       <Header />
     
       <div className='reads-page'>

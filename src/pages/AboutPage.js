@@ -7,11 +7,13 @@ import Blog from './../components/blog/Blog';
 import NewsBlock from './../components/newsBlock/NewsBlock';
 import Footer from './../components/footer/Footer';
 import ReadsBlock from './../components/reads/ReadsBlock';
+import ScrollToTop from './scrollToTop';
 
 
 function AboutPage() {
   return (
     <>
+    <ScrollToTop />
       <Header />
       <Promo />
       <About />

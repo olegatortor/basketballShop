@@ -72,6 +72,11 @@
         }
     }
     &-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #000;
         transition: all .5s;
         font-family: Montserrat;
         cursor: pointer;
@@ -80,6 +85,9 @@
         border: none;
         background-color: #FBBB4D;
         font-size: 32px;
+        &:hover {
+            background-color: #c59238;
+        }
     }
     &-active {
         background-color: #c59238;

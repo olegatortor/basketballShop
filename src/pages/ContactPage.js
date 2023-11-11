@@ -6,11 +6,13 @@ import Benefits from './../components/benefits/Benefits';
 import NewsBlock from './../components/newsBlock/NewsBlock';
 import Map from './../components/map/Map';
 import Footer from './../components/footer/Footer';
+import ScrollToTop from './scrollToTop';
 
 
 function ContacPage() {
   return (
     <>
+    <ScrollToTop />
       <Header />
       <Promo />
       <About />
