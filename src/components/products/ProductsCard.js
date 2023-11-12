@@ -1,7 +1,11 @@
 import React from 'react';
 
-function ProductCard({ product }) {
+function ProductCard({ product, onAddToCart }) {
   const { img, name, descr, price } = product;
+
+  const handleAddToCart = () => {
+    onAddToCart(product);
+  }
 
   return (
     <div className="products-card">
@@ -11,7 +15,7 @@ function ProductCard({ product }) {
         <p className='products-descr'>{descr}</p>
         <p className='products-price'>{price} грн</p>
       </div>
-      <button className='btn'>до кошика</button>
+      <button className='btn' onClick={handleAddToCart}>до кошика</button>
     </div>
   );
 }

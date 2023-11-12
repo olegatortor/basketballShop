@@ -11,7 +11,7 @@ import ScrollToTop from './scrollToTop';
 
 // import HomePage from './sites/Home';
 
-function HomePage() {    
+function HomePage({selectedProducts, setSelectedProducts}) {    
   const [activeCategory, setActiveCategory] = useState({ title: '', link: '' });
   const [currentPage, setCurrentPage] = useState(1);
   let [productsArray, setProductsArray] = useState([]);
@@ -19,7 +19,9 @@ function HomePage() {
   return (
     <>
     <ScrollToTop />
-      <Header />
+      <Header 
+        selectedProducts={selectedProducts} 
+        setSelectedProducts={setSelectedProducts}/>
       <Promo />
       <About />
       <CategoryBlock 

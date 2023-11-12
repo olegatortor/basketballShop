@@ -9,11 +9,13 @@ import Footer from './../components/footer/Footer';
 import ScrollToTop from './scrollToTop';
 
 
-function ContacPage() {
+function ContacPage({selectedProducts, setSelectedProducts}) {
   return (
     <>
     <ScrollToTop />
-      <Header />
+      <Header 
+        selectedProducts={selectedProducts} 
+        setSelectedProducts={setSelectedProducts}/>
       <Promo />
       <About />
       <Map />

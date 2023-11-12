@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -14,17 +14,18 @@ import ContactPage from './pages/ContactPage';
 // import ClothesPage from './pages/ClothesPage';
 
 function App() {
+  const [selectedProducts, setSelectedProducts] = useState([]);
 
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/about/:articleId" element={<ReadsPage />} />
+        <Route path="/" element={<HomePage selectedProducts={selectedProducts}  setSelectedProducts={setSelectedProducts}/>} />
+        <Route path="/about" element={<AboutPage selectedProducts={selectedProducts}  setSelectedProducts={setSelectedProducts}/>} />
+        <Route path="/about/:articleId" element={<ReadsPage selectedProducts={selectedProducts}  setSelectedProducts={setSelectedProducts}/>} />
         {/* <Route path="/products/accessories/page/1" element={<GoodsPage />} /> */}
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/contact" element={<ContactPage selectedProducts={selectedProducts}  setSelectedProducts={setSelectedProducts}/>} />
 
-        <Route path="/products/:category/page/:page" element={<GoodsPage />} />
+        <Route path="/products/:category/page/:page" element={<GoodsPage selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}/>} />
         {/* <Route path="/products/:category/page/:page" element={<GoodsPage />} />
         <Route path="/products/:category/page/:page" element={<BallPage />} />
         <Route path="/products/:category/page/:page" element={<ClothesPage />} /> */}

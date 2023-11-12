@@ -10,11 +10,13 @@ import ReadsBlock from './../components/reads/ReadsBlock';
 import ScrollToTop from './scrollToTop';
 
 
-function AboutPage() {
+function AboutPage({selectedProducts, setSelectedProducts}) {
   return (
     <>
     <ScrollToTop />
-      <Header />
+      <Header 
+        selectedProducts={selectedProducts} 
+        setSelectedProducts={setSelectedProducts}/>
       <Promo />
       <About />
       <ReadsBlock />

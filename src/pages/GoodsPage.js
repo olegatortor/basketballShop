@@ -15,7 +15,7 @@ import ClothesData from './../components/category/ClothesData';
 import BallData from './../components/category/BallData';
 
 
-function GoodsPage() {
+function GoodsPage({selectedProducts, setSelectedProducts}) {
   const { category, page } = useParams();
   const [currentPage, setCurrentPage] = useState(page ? parseInt(page) : 1);
   let [productsArray, setProductsArray] = useState([]);
@@ -45,10 +45,13 @@ function GoodsPage() {
   }, [category]);
 
   // console.log(productsArray);
+  
   return (
     <>
     {/* <ScrollToTop /> */}
-      <Header />
+      <Header 
+        selectedProducts={selectedProducts} 
+        setSelectedProducts={setSelectedProducts}/>
       <CategoryBlock
         currentPage={currentPage}
         active={category}/>
@@ -57,6 +60,8 @@ function GoodsPage() {
         currentPage={currentPage}
         productsArray={productsArray}
         setCurrentPage={setCurrentPage}
+        selectedProducts={selectedProducts}
+        setSelectedProducts={setSelectedProducts}
       />
       <NewsBlock />
       <Footer />

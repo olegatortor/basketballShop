@@ -22,7 +22,7 @@ function Footer() {
         <ul>
           <li><Link to="/" className='footer-link'>Головна</Link></li>
           <li><Link to="/about" className='footer-link'>Про нас</Link></li>
-          <li><Link to="/products" className='footer-link'>Товари</Link></li>
+          <li><Link to="/products/accessories/page/1" className='footer-link'>Товари</Link></li>
           <li><Link to="/contacts" className='footer-link'>Контакти</Link></li>
         </ul>
       </div>

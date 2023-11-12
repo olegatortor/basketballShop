@@ -8,14 +8,16 @@ import Footer from './../components/footer/Footer';
 import ScrollToTop from './scrollToTop';
 
 
-function ReadsPage() {
+function ReadsPage({selectedProducts, setSelectedProducts}) {
   const { articleId } = useParams();
   const article = readsData.find((item) => item.id.toString() === articleId);
 
   return (
     <>
       <ScrollToTop />
-      <Header />
+      <Header 
+        selectedProducts={selectedProducts} 
+        setSelectedProducts={setSelectedProducts}/>
     
       <div className='reads-page'>
           <img src={`../../${article.image}`} alt={article.title}  className='reads-page-img'/>
